@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 
 import BusIndex from '../views/bus/Bus.vue';
 
+
 Vue.use(VueRouter)
 
 const routes = [

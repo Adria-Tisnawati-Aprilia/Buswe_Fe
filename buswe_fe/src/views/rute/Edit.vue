@@ -11,7 +11,7 @@
                     <select class="block w-full px-3 py-2 bg-white border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     v-model="rute.asal"
                     >
-                    <option v-for="terminal in terminals.data"
+                    <option :v-for="terminal in terminals.data"
                     :value="terminal.id"
                     >
                     {{terminal.kode }} - {{ terminal.nama}}</option>
@@ -22,7 +22,7 @@
                 <select class="block w-full px-3 py-2 bg-white border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 v-model="rute.tujuan"
                 >
-                <option v-for="terminal in terminals.data"
+                <option :v-for="terminal in terminals.data"
                 :value="terminal.id"
                 >
                 {{terminal.kode }} - {{ terminal.nama}}</option>
@@ -34,12 +34,12 @@
         </div>
         <div class="mb-2">
             <label for="country" class="block text-sm font-medium text-gray-700">Checkpoints</label>
-            <div class="flex items-center" v-for="(ruteIterate, i) in rute.checkpoints">
+            <div class="flex items-center" :v-for="(ruteIterate, i) in rute.checkpoints">
                 <input v-model.number="rute.checkpoints[i].code" type="text" class="block w-full px-3 py-2 border-2 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Kode" />
                 <select class="block w-full px-3 py-2 bg-white border-2 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 v-model="rute.checkpoints[i].id"
                 >
-                <option v-for="terminal in terminals.data"
+                <option :v-for="terminal in terminals.data"
                 :value="terminal.id"
                 >
                 {{terminal.kode }} - {{ terminal.nama}}</option>

@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import bus from './bus.store'
-import bus from './supir.store'
-import bus from './terminal.store'
+import supir from './supir.store'
+import terminal from './terminal.store'
 
 Vue.use(Vuex)
 

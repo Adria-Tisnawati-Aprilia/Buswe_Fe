@@ -1,7 +1,7 @@
 import store from '../store'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/HomeView.vue'
 
 import BusIndex from '../views/bus/Bus.vue'
 import BusAdd from '../views/bus/Add.vue'
